@@ -1,0 +1,22 @@
+<h2>
+  Burgers to Eat
+</h2>
+<ul>
+  {{#each burgers}}
+  {{#unless devoured}}
+  <p>
+    {{id}} {{burger_name}}
+  </p>
+  <button class="change-devour" data-id="{{id}}" data-devour="{{devoured}}">
+    Eat it!
+  </button>
+  {{/unless}}
+  {{/each}}
+</ul>
+
+
+
+<form>
+  Burger name: <input type="text" name="burgerName" id="newBurgerName"><br>
+  <input type="submit" value="Submit" id="submit">
+</form>
