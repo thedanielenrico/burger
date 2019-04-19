@@ -27,7 +27,7 @@ router.put("/api/burgers/:id", function (req, res) {
 
     burger.updateOne(req.params.id, function(data){;
         res.status(200).end();
-        console.log("burger updated")
+
     })
 })
 

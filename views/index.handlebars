@@ -13,10 +13,22 @@
   {{/unless}}
   {{/each}}
 </ul>
+<h2>
+  Burgers that have been eaten!
+</h2>
+<ul>
+  {{#each burgers}}
+  {{#if devoured}}
+  <p>
+    {{id}} {{burger_name}}
+  </p>
+  {{/if}}
+  {{/each}}
+</ul>
 
 
 
 <form>
-  Burger name: <input type="text" name="burgerName" id="newBurgerName"><br>
-  <input type="submit" value="Submit" id="submit">
+  New burger: <input type="text" name="burgerName" id="newBurgerName" placeholder="name"><br>
+  <input type="submit" value="Make it!" id="submit">
 </form>

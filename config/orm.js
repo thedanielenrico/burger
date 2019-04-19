@@ -14,14 +14,14 @@ var orm = {
     insertOne: function (value, cb) {
         connection.query("INSERT INTO burgers (burger_name) VALUES (?);", [value], function (err, result) {
             if (err) throw err;
-            console.log(result);
+
             cb(result);
         })
     },
     updateOne: function (id, cb) {
         connection.query("UPDATE burgers SET devoured = 1 WHERE id = ?", id, function (err, result) {
             if (err) throw err;
-            console.log(result);
+
             cb(result);
         })
     }
