@@ -1,6 +1,11 @@
 body {
     background-color: orange;
 }
-h2 {
-    color: aqua;
+ul {
+    max-height: 250px;
+    overflow: scroll;
+    border-style: groove;
+    border-color: whitesmoke;
+    border-width: 5px;
+    padding-top: 10px;
 }
