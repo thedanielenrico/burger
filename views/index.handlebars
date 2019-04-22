@@ -4,7 +4,7 @@
       <h2 class="text-center display-4">
         Burger Menu
       </h2>
-      <ul>
+      <ul class="text-block">
         {{#each burgers}}
         {{#unless devoured}}
         <p>
@@ -40,7 +40,7 @@
         Add a new burger!
       </h3>
       <form class="text-center">
-        New burger name: <input type="text" name="burgerName" id="newBurgerName" placeholder="name" class=""><br>
+        <input type="text" name="burgerName" id="newBurgerName" placeholder="New burger name" class=""><br>
         <input type="submit" value="Make it!" id="submit" class="btn btn-primary m-3">
       </form>
     </div>
